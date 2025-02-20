@@ -1,18 +1,18 @@
 import java.util.Scanner;
 
 public class Livro {
-     private String titulo;
+    private String titulo;
     private String autor;
-    private int NumPaginas;
+    private  int NumPaginas;
     private Double preco;
 
 
     Scanner sc = new Scanner(System.in);
 
-    public Livro(String titulo, String autor, int numPaginas, Double preco) {
+    public Livro(String titulo, String autor, int NumPaginas, Double preco) {
         this.titulo = titulo;
         this.autor = autor;
-        this.NumPaginas = numPaginas;
+        this.NumPaginas = NumPaginas;
         this.preco = preco;
     }
 

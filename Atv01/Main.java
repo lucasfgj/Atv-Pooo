@@ -1,7 +1,11 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         Livro[] livro1 = new Livro[2];
         int contLivro = 1;
+
+        Scanner sc = new Scanner(System.in);
 
         for(int i = 0; i< livro1.length; i++){
 
@@ -15,7 +19,7 @@ public class Main {
         Double precoLivro = sc.nextDouble();
         sc.nextLine();
 
-        Livro livro = new Livro(tituloLivro, autorLivro, numPagina, precoLivro);
+        Livro livro = new Livro(tituloLivro, autorLivro, i, numPagina, precoLivro);
         
         System.out.println("O livro é " + livro.getTitulo());
         System.out.println("O autor do Livro é: " + livro.getAutor());
