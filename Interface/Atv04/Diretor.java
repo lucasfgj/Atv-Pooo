@@ -1,6 +1,7 @@
-public class Diretor extends Funcionario {
-    private final double PREMIO = 0.2;
+public class Diretor extends Funcionario implements Contratacao {
+    private final double PREMIO = 1.2;
 
+    
     public Diretor(String nome, String dataNascimento, Sexo sexo, Setor setor, double salarioBase) {
         super(nome, dataNascimento, sexo, setor, salarioBase);
     }
@@ -11,10 +12,18 @@ public class Diretor extends Funcionario {
     
     @Override
     public double getSalarioFinal(){
-        double resultado = 0;
-        resultado = super.salarioBase;
-        resultado += super.salarioBase * this.PREMIO;
-        return resultado;
+        return super.getSalarioBase() * PREMIO;
+    };
+
+    @Override
+    public void admitir(Funcionario funcionario) {
+        System.out.println("Admitindo funcionário: " + funcionario.toString());
     }
-    
+
+    @Override
+    public void demitir(Funcionario funcionario) {
+        System.out.println("Demitindo funcionário: " + funcionario.toString());
+    }
 }
+
+
