@@ -1,3 +1,4 @@
+pakjage Interface.Atv04;
 public class Diretor extends Funcionario implements Contratacao {
     private final double PREMIO = 1.2;
 

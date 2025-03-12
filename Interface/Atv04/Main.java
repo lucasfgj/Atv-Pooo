@@ -1,3 +1,4 @@
+package Interface.Atv04;
 public class Main {
     public static void main(String[] args) {
         Funcionario motoboy = new Motoboy("Alison", "25/06/98", Sexo.MASCULINO, Setor.OPERACOES, 2500, "ba3950078");

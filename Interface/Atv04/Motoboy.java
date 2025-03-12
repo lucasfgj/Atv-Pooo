@@ -1,3 +1,4 @@
+package Interface.Atv04;
 public class Motoboy extends Funcionario {
     private String cnh;
 
