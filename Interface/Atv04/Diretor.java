@@ -8,7 +8,7 @@ public class Diretor extends Funcionario implements Contratacao {
 
     public double getPREMIO(){
         return PREMIO;
-    };
+    }
     
     @Override
     public double getSalarioFinal(){
